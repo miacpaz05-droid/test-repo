@@ -5,7 +5,9 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git credentialsId: 'git', url: 'git@github.com:miacpaz05-droid/test-repo.git', branch: 'main'
+                git credentialsId: 'git',
+                    url: 'git@github.com:miacpaz05-droid/test-repo.git',
+                    branch: 'main'
             }
         }
 
